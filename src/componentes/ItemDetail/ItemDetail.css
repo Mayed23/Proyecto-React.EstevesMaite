@@ -1,0 +1,28 @@
+div.contenedorRpto{
+
+   display: block;
+   justify-content: center;
+   align-content: center;
+   margin-left: 22%;
+   
+}   
+
+.contenedorRpto{
+
+    
+    width: 50%;
+    background-color: rgba(154, 203, 226, 0.466);
+    text-align: center;
+    border: 1px solid blue;
+    border-radius: 5%;
+    margin: 3%;
+ 
+
+}
+
+.imgContenedorRpto{
+    
+    width: 35%;
+    border-radius: 5%;
+    margin-bottom: 2%;
+}

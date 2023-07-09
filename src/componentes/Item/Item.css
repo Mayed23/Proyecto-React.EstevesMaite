@@ -1,0 +1,28 @@
+.cardRptos {
+   
+    background-color: rgba(94,125,209,0.267);
+    border-radius: 10px;
+    width: 18%;
+    padding: 1%;
+    margin: 1%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+   
+}
+
+.imagenRptos {
+    width: 60%;  
+    object-fit: contain;
+}
+
+.btnRptos {
+    background-color: rgb(159, 159, 224);
+    color:aliceblue;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
