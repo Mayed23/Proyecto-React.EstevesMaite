@@ -6,6 +6,8 @@ import './ItemDetail.css'
 
 const ItemDetail = ({id, nombre, modelo, precio, img}) => {
 
+  
+
   return (
     <div className='contenedorRpto'>
      
@@ -17,7 +19,7 @@ const ItemDetail = ({id, nombre, modelo, precio, img}) => {
       <p>Repuestos marca Chevrolet genuinos, todas nuestras piezas son suministradas por el fabricante del vehículo de acuerdo con las necesidades de este. Recuerda que al no usar repuestos genuinos pierdes la garantía de tu Chevrolet. Además, puedes sufrir accidentes o provocar el mal funcionamiento de tu vehículo.
       </p>  
  
-      <ItemCount   stock={10} inicial={1} />  
+      <ItemCount   stock={10} inicial={1} onAdd={(cantidad) => condole.log('Cantidad agregada', cantidad)}/>  
     
         
     </div>
