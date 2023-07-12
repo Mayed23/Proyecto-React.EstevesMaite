@@ -4,7 +4,15 @@ import ItemCount from '../ItemCount/ItemCount'
 import { Link } from 'react-router-dom'
 import './ItemDetail.css'
 
-const ItemDetail = ({id, nombre, modelo, precio, img}) => {
+const ItemDetail = ({id, nombre, modelo, precio, img, stock}) => {
+
+  const [agregarCantidad, setAgregarCantidad] = useState(0);
+
+  const handlerAgregar = (cantidad)=> {
+    setAgregarCantidad(cantidad);
+    console.log("Repuestos Agregados:" + cantidad);
+
+  }
 
   
 
@@ -18,8 +26,12 @@ const ItemDetail = ({id, nombre, modelo, precio, img}) => {
       <h3>ID: {id}</h3>
       <p>Repuestos marca Chevrolet genuinos, todas nuestras piezas son suministradas por el fabricante del vehículo de acuerdo con las necesidades de este. Recuerda que al no usar repuestos genuinos pierdes la garantía de tu Chevrolet. Además, puedes sufrir accidentes o provocar el mal funcionamiento de tu vehículo.
       </p>  
+
+      {
+        agregarCantidad > 0 ? (<Link to="/cart"> Realizar Compra </Link>) : (<ItemCount inicial={1} stock={stock} onAdd={handlerAgregar}/>)
+      }
  
-      <ItemCount   stock={10} inicial={1} onAdd={(cantidad) => condole.log('Cantidad agregada', cantidad)}/>  
+      
     
         
     </div>
