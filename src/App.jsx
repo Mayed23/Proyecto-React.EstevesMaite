@@ -1,3 +1,4 @@
+
 import ItemListContainer from './componentes/ItemListContainer/ItemListContainer'
 import NavBar from './componentes/NavBar/NavBar'
 import './App.css'
@@ -16,7 +17,7 @@ const App = () => {
             <Route path="/categoria/:idCategoria" element={<ItemListContainer/>}/>
             <Route path="item/:idItem" element={<ItemDetailContainer/>}/>
             <Route path="/categoria/3" element={<h2 className='aviso'>Próximamente!!!!</h2>}/>
-            <Route path="*" element={<p className='aviso'>Página en Construcción</p>}/>
+            <Route path="*" element={<p className='aviso'> Página en Construcción</p>}/>
             <Route/>
 
           </Routes>  
