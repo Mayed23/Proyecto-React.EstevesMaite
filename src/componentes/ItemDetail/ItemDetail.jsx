@@ -15,8 +15,7 @@ const ItemDetail = ({ id, nombre, modelo, precio, img, stock }) => {
   const handlerAgregar = (cantidad) => {
     setAgregarCantidad(cantidad);
 
-    // console.log("Repuestos Agregados:" + cantidad);
-
+    
     const item = { id, nombre, modelo, precio };
     agregarRepuesto(item, cantidad);
 
