@@ -1,21 +1,22 @@
-header{
+header {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin: 40px;
     border-bottom: 1px solid black;
-    
-}
-h1{
-    color: rgb(3, 3, 155);
-   
-}   
 
-li{
+}
+
+h1 {
+    color: rgb(3, 3, 155);
+
+}
+
+li {
     display: inline-block;
     cursor: pointer;
     margin: 30px;
-    text-decoration:underline;
+    text-decoration: underline;
     color: blue;
-    
+
 }

@@ -19,7 +19,7 @@ const NavBar = () => {
 
         <li>
           <NavLink to="/categoria/3"> Kit Indicador/Flotante </NavLink>
-        </li>        
+        </li>
       </ul>
       <CartWidget />
 
