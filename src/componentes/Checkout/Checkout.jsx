@@ -7,7 +7,7 @@ import "./Checkout.css"
 const Checkout = () => {
 
     const { bolsaCompra, vaciarBolsaCompra, total } = useContext(CartContext);
-    const [nombregit , setNombre] = useState("");
+    const [nombre, setNombre] = useState("");
     const [apellido, setApellido] = useState("");
     const [telefono, setTelefono] = useState("");
     const [email, setEmail] = useState("");
@@ -90,7 +90,7 @@ const Checkout = () => {
         <div>
             <h2>Checkout</h2>
 
-            <form onSubmit={manejadorFormulario} className="formulario">
+            <form onSubmit={manejadorFormulario} className="formulariogit ">
                 {bolsaCompra.map(repuesto => (
                     <div key={repuesto.Item.id}>
                         <p>
