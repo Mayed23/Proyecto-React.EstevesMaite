@@ -7,7 +7,7 @@ import "./Checkout.css"
 const Checkout = () => {
 
     const { bolsaCompra, vaciarBolsaCompra, total } = useContext(CartContext);
-    const [nombres, setNombres] = useState("");
+    const [nombregit , setNombre] = useState("");
     const [apellido, setApellido] = useState("");
     const [telefono, setTelefono] = useState("");
     const [email, setEmail] = useState("");
@@ -26,7 +26,7 @@ const Checkout = () => {
 
         event.preventDefault();
 
-        if (!nombres || !apellido || !telefono || !email || !emailConfirm) {
+        if (!nombre || !apellido || !telefono || !email || !emailConfirm) {
             setError("Por favor, completar todos los Campos");
             return;
         }
@@ -105,7 +105,7 @@ const Checkout = () => {
 
                 <div className="form-grupo">
                     <label htmlFor=""> Nombre: </label>
-                    <input type="text" value={nombres} onChange={(e) => setNombres(e.target.value)} />
+                    <input type="text" value={nombre} onChange={(e) => setNombre(e.target.value)} />
                 </div>
                 <div className="form-grupo">
                     <label htmlFor=""> Apellido: </label>
